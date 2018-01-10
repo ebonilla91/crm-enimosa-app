@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_accounts_settings">ENIMOSA CRM</string>
+    <string name="label_login">Iniciar Sesión</string>
+    <string name="label_accept_login">Ingresar</string>
+    <string name="label_your_self_hosted_url"></string>
+    <string name="label_username">Usuario</string>
+    <string name="label_username_or_email">Usuario o email</string>
+    <string name="label_password">Contraseña</string>
+    <string name="label_forgot_password">Olvidó su contraseña?</string>
+    <string name="label_add_self_hosted_url"></string>
+    <string name="label_login_with_odoo"></string>
+    <string name="label_create_account"></string>
+    <string name="label_select_database">Seleccionar Cuenta</string>
+    <string name="title_ssl_warning">SSL Warning</string>
+    <string name="untrusted_ssl_warning">El certificado del sitio no es seguro !</string>
+    <string name="error_invalid_odoo_url">URL Inválida</string>
+    <string name="error_invalid_username_or_password">Usuario o Contraseña incorrectos</string>
+    <string name="error_invalid_password">Contraseña Inválida</string>
+    <string name="error_provide_username">Ingrese el usuario</string>
+    <string name="error_provide_password">Ingrese la contraseña</string>
+    <string name="error_provide_server_url">Ingrese URL del server</string>
+    <string name="status_connecting_to_server">Conectando&#8230;</string>
+    <string name="status_connected_to_server">Conectado</string>
+    <string name="status_logging_in">Iniciando Sesión&#8230;</string>
+    <string name="status_logging_in_with_instance">Ingresando a la instancia&#8230;</string>
+    <string name="status_login_success">Incio de sesión exitoso</string>
+    <string name="status_logout_success">Cierre de sesión exitoso</string>
+    <string name="status_creating_account"></string>
+    <string name="status_getting_instances"></string>
+    <string name="status_redirecting">Redirigiendo&#8230;</string>
+    <string name="title_instance_expired">Instancia Expirada</string>
+    <string name="label_select_instance">Seleccionar Instancia</string>
+    <string name="label_select_user">Ingresar como usuario</string>
+    <string name="label_accounts">Cuentas</string>
+    <string name="label_settings">Ajustes</string>
+    <string name="label_save">Guardar</string>
+    <string name="label_edit">Editar</string>
+    <string name="label_required">requerido</string>
+    <string name="label_more">Más</string>
+    <string name="label_alert">Alerta</string>
+    <string name="label_warning">Precaución</string>
+    <string name="label_error">Error</string>
+    <string name="label_share">Compartir</string>
+    <string name="label_import_contact">Importar</string>
+    <string name="label_address">Dirección</string>
+    <string name="label_reply">Respuesta</string>
+    <string name="label_close">Cerrar</string>
+    <string name="label_send">Enviar</string>
+
+    <!-- package warning -->
+    <string name="changes_required">Cambios requeridos en \n<b>app/build.gradle</b> para</string>
+    <string name="label_app_name">Nombre de aplicacion</string>
+    <string name="label_package_name">Id de aplicacion</string>
+    <string name="label_dialog_disappear">El panel desaparecera cuando cambie la configuracion.</string>
+    <!-- Drawer -->
+    <string name="label_drawer_account_add_account">Agregar Cuenta</string>
+    <string name="label_drawer_account_manage_accounts">Administrar Cuentas</string>
+    <!-- Common Labels -->
+    <string name="title_application_settings">"Ajustes de Aplicación"</string>
+    <string name="title_select_account">"Seleccione cuenta"</string>
+    <string name="title_settings">Ajustes</string>
+    <string name="title_profile">Perfil</string>
+    <string name="title_general_settings">Ajustes Generales</string>
+    <string name="title_accounts">Cuentas</string>
+    <string name="title_about">Acerca de</string>
+    <string name="title_confirm">Confirmar</string>
+    <string name="title_user_profile">Perfil de Usuario</string>
+    <string name="title_configuration">Configuración</string>
+    <string name="title_refresh_details">Actualizar Detalles</string>
+    <string name="title_add_account">Agregar Cuenta</string>
+    <string name="title_working">Trabajando&#8230;</string>
+    <string name="title_please_wait">Espere por favor&#8230;</string>
+    <string name="label_new">Nuevo</string>
+    <string name="label_ok">OK</string>
+    <string name="label_yes">Sí</string>
+    <string name="label_no">No</string>
+    <string name="label_search">Buscar</string>
+    <string name="label_delete">Borrar</string>
+    <string name="label_cancel">Cancelar</string>
+    <string name="label_logout">Salir</string>
+    <string name="label_version">Versión</string>
+    <string name="label_update_info">Actualizar Info</string>
+    <string name="label_process_anyway">Procesar de todas formas</string>
+    <string name="label_read_more">Leer más</string>
+    <string name="label_read_less">Leer menos</string>
+    <string name="label_no_records_found">No se encontraron registros</string>
+    <string name="label_odoo_mobile_on_github">Odoo Mobile on GitHub</string>
+    <string name="label_odoo_developer_mode">Modo desarrollador</string>
+    <string name="label_export_db">Exportar Base de Datos</string>
+    <string name="label_our_apps">Nuestras apps</string>
+    <string name="label_attach_a_file"> + Adjuntar Archivo</string>
+    <string name="label_be_patient_we_are_configuring_account_update">Sea paciente, estamos configurando las actualizaciones de su cuenta</string>
+    <!-- Toasts -->
+    <string name="developer_2_tap">Need 2 tap for developer mode</string>
+    <string name="developer_5_tap">Developer mode activated</string>
+    <string name="toast_setting_saved">Opciones Guardadas.</string>
+    <string name="toast_are_you_sure_logout">Está seguro que quiere salir ?</string>
+    <string name="toast_are_you_sure_delete_account">Está seguro que quiere borrar la cuenta ?</string>
+    <string name="toast_user_already_exists">El usuario ya existe</string>
+    <string name="toast_network_required">Red requerida</string>
+    <string name="toast_account_removed">Cuenta Borrada Exitosamente</string>
+    <string name="toast_no_activity_found_to_handle_file">No activity found to handle file</string>
+    <string name="toast_updating_password">Actualizando contraseña</string>
+    <string name="toast_something_gone_wrong">Algo salió mal</string>
+    <!-- Setting pref strings -->
+    <string-array name="syncInterval">
+        <item name="5">Cada 5 minutos</item>
+        <item name="10">Cada 10 minutos</item>
+        <item name="20">Cada 20 minutos</item>
+        <item name="40">Cada 40 minutos</item>
+        <item name="60">Cada 60 minutos</item>
+        <item name="1440">Una vez al día</item>
+    </string-array>
+    <string-array name="syncIntervalValues">
+        <item name="5">5</item>
+        <item name="10">10</item>
+        <item name="20">20</item>
+        <item name="40">40</item>
+        <item name="60">60</item>
+        <item name="1440">1440</item>
+    </string-array>
+    <string-array name="syncDataLimit">
+        <item name="30">1 mes</item>
+        <item name="60">2 meses</item>
+        <item name="90">3 meses</item>
+        <item name="180">6 meses</item>
+        <item name="360">12 meses</item>
+    </string-array>
+    <string-array name="syncDataLimitValues">
+        <item name="30">30</item>
+        <item name="60">60</item>
+        <item name="90">90</item>
+        <item name="180">180</item>
+        <item name="360">360</item>
+    </string-array>
+    <string name="general_settings">Ajustes Generales</string>
+    <string name="application_settings_summary">Config. de Sincronizacion, Intervalos, Limite de datos, y mas</string>
+    <string name="account_settings">Ajustes de Cuenta</string>
+    <string name="add_account">Agregar Cuenta</string>
+    <string name="summary_about_odoo_mobile">ENIMOSA CRM</string>
+    <string name="build_version">Build Version</string>
+    <string name="label_powered_by">Powered by</string>
+    <string name="odoo_mobile_framework">Enimosa CRM Framework</string>
+    <string name="supported_versions">Versiones Soportadas</string>
+    <string name="supported_versions_names">Enimosa CRM 7.0+</string>
+    <string name="label_access_odoo_mobile">Conectarse a Enimosa CRM</string>
+    <!-- About Company Fragment Strings -->
+    <string name="about_Company_line1">Hacemos la publicidad cada vez mas eficiente mediante el uso de datos y tecnología.</string>
+    <string name="about_Company_line2">Buscamos ser la empresa más eficaz de habla hispana, con un modelo de negocio sano, continuo, replicable y escalable</string>
+    <string name="about_Company_line3">Mas informacion en nuestra <a href="https://itc.services/">ITC Website</a></string>
+    <string name="about_Company_line4"></string>
+    <string name="app_version_name">Versión</string>
+    <string name="notification_default_ring_tone">content://settings/system/notification_sound</string>
+    <string name="disclaimer_content">Bienvenido a ENIMOSA CRM</string>
+</resources>
+
+    

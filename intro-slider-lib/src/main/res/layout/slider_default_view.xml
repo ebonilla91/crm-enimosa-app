@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.odoo.widgets.slider.SliderHelper
+        android:id="@+id/default_view_helper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_primary"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="COMENZAR"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/default_view_helper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:id="@+id/footer_dot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp" />
+
+</RelativeLayout>

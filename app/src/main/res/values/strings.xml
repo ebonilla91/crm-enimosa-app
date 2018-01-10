@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ENIMOSA CRM</string>
+    <string name="label_today">Today</string>
+    <!-- Sync Labels// -->
+    <string name="sync_label_customers">Clientes</string>
+    <string name="sync_label_calendar">Calendario</string>
+    <string name="sync_label_lead_opportunities">Oportunidades</string>
+    <string name="sync_label_quotation_sales_orders">Cotizaciones/Ordenes de Venta</string>
+    <string name="sync_label_phonecalls">Llamadas Registradas</string>
+    <string name="no_notification">No Notificación</string>
+    <string name="at_the_time_of_event">En el momento del evento</string>
+    <string name="on_the_day_at">On the day at %s</string>
+    <string name="on_your_working_day_start_time">Próximo día de trabajo</string>
+    <string name="day_before_at">El día anterior a %s</string>
+    <string name="minutes_before">%s minutos antes</string>
+    <string name="custom">Custom...</string>
+    <string name="error_end_date_small_than_start_date">Fecha de finalizacion no puede ser anterior a la de comienzo.</string>
+    <string name="label_all">Todos</string>
+    <string name="label_leads">Iniciativas</string>
+    <string name="label_lead">Iniciativa</string>
+    <string name="label_opp">Oportunidad</string>
+    <string name="label_opportunities">Oportunidades</string>
+    <string name="label_quotation">Cotizaciones</string>
+    <string name="label_opportunity">Oportunidad</string>
+    <string name="label_sale_orders">Ordenes de Venta</string>
+    <string name="label_phone_calls">Llamadas telefónicas</string>
+    <string name="label_logged_calls">Llamadas Registradas</string>
+    <string name="label_scheduled_calls">Llamadas Programadas</string>
+    <string name="label_logged_call">Llamada Registrada</string>
+    <string name="label_scheduled_call">Llamada Programada</string>
+    <string name="label_log_call">Registro de Llamada</string>
+    <string name="label_convert_to_opportunity">Convertir en Oportunidad</string>
+    <string name="label_create_opportunity">Crear Oportunidad</string>
+    <string name="label_convert_to_quotation">Crear Cotización</string>
+    <string name="label_create_quotation">@string/label_convert_to_quotation</string>
+    <string name="label_mark_as_lost">Perdido</string>
+    <string name="label_mark_as_won">Ganado</string>
+    <string name="label_location">Localización</string>
+    <string name="label_call">Llamada</string>
+    <string name="label_call_held">Retenida</string>
+    <string name="label_message">Mensage</string>
+    <string name="label_schedule_call">Programar</string>
+    <string name="label_meetings">Reunión</string>
+    <string name="label_sale_confirm_sale">Confirmar Venta</string>
+    <string name="label_sale_create_invoice">Crear Factura</string>
+    <string name="label_sale_cancel_order">Cancelar Orden</string>
+    <string name="label_sale_new_copy_of_quotation">Nueva copia de cotización</string>
+    <string name="label_mark_done">Realizado</string>
+    <string name="label_mark_undone">No Realizado</string>
+    <string name="label_tag_new">Nuevo</string>
+    <string name="label_quotation_created">Cotización creada para</string>
+    <string name="label_re_schedule">Reprogramar</string>
+    <string name="label_sync_warning">Necesita sincronizar antes de convertir en oportunidad</string>
+    <string name="label_no_customer_found">No se encontraron clientes</string>
+    <string name="label_no_location_found">No se encontró localización !</string>
+    <string name="label_no_contact_found">Contacto no encontrado !</string>
+    <string name="label_no_opportunity_found">Oportinidades no encontradas </string>
+    <string name="label_no_email_found">Email no encontrado !</string>
+    <string name="label_no_logged_calls_found">Llamadas Registradas no encontradas</string>
+    <string name="label_no_scheduled_calls_found">Llamadas Programadas no encontradas</string>
+    <string name="label_event_marked">Evento Marcado</string>
+    <string name="label_new_meeting">Nueva Reunión</string>
+    <string name="label_edit_meeting">Editar Reunión</string>
+    <string name="label_missed_call_from_customer">Llamada perdida de cliente</string>
+    <string name="label_manage_order_lines">Administrar líneas de pedido</string>
+    <string name="label_define_lead">Definir el lead</string>
+    <string name="label_expected_revenue">Ingresos Esperados</string>
+    <string name="label_at"> a </string>
+    <string name="label_conversion_action"> Acción de Conversión </string>
+    <string name="toast_information_saved">Información Guardada</string>
+    <string name="toast_phone_call_marked_done">Llamada telefónica realizada</string>
+    <string name="toast_event_marked_done">Evento marcado como realizado</string>
+    <string name="toast_image_size_too_large">El tamaño de imagen es muy grande.</string>
+    <string name="toast_marked"> marcado</string>
+    <string name="message_to">Mensage para %s</string>
+    <string name="add_internal_note">Agregar nota interna</string>
+    <string name="internal_note_hint">Agregar nota interna que no va a ser enviada a los seguidores</string>
+    <string name="label_log_note">Nota de registro</string>
+    <string name="label_send_message"><u>Enviar mensaje</u></string>
+    <string name="label_log_an_internal_note"><u>Registrar nota interna</u></string>
+    <string-array name="array_conversation_actions">
+        <item>Convertir en Oportunidad</item>
+        <item>Combinar con las oportunidades existentes</item>
+    </string-array>
+
+    <string name="label_send_by_email">Enviar por email</string>
+    <string name="label_confirm_sale">Confirmar Venta</string>
+    <string name="label_copy_quotation">Copiar Cotización</string>
+    <string name="label_no_order_line">No se puede confirmar orden de venta que no registra líneas</string>
+    <string name="label_quotation_confirm">Cotización Confirmada !</string>
+    <string name="label_new_copy_quotation">Nueva copia de cotización</string>
+    <string name="label_opt_schedule_log_call">Programar/Registro de Llamada</string>
+    <string name="label_opt_schedule_meeting">Reunión</string>
+
+    <!-- Working day start time -->
+    <string name="default_day_start_time">09:00:00</string>
+    <string name="label_version_build">Build</string>
+    <string name="toast_permission_download_storage">Permisos de almacenamiento en la SDCard del telefono son requeridos</string>
+    <string name="toast_permission_download_storage_help">Se requiere conceder permisos de almacenamiendo en la SDCard del telefono</string>
+    <string name="alert_permission_help">Se requiere conceder de permisos a la aplicacion.</string>
+    <string name="confirm_are_you_sure_want_to_delete">Está seguro que desea borrar ?</string>
+    <string name="toast_record_deleted">Registro Borrado</string>
+    <string name="almost_there">Ingresando...</string>
+    <string name="your_account_is_setting_up">Su cuenta se está configurando</string>
+    <string name="title_oops">Oops !</string>
+    <string name="message_some_module_dependency_failed">Características relacionadas con <b>%s</b> no van a funcionar en la aplicación. Por favor instale módulo <b>%s</b> en el servidor.</string>
+    <string name="label_continue">Continuar</string>
+    <string name="title_no_modules">No hay módulos</string>
+    <string name="message_modules_not_installed">Para iniciar la aplicación los módulos %s deben estar instalados en el servidor. Por favor contactesé con su administrador.</string>
+    <string name="title_access_denied">Acceso Denegado</string>
+    <string name="message_no_app_access">No tiene permiso para acceder al módulo (%s). Por favor conctactesé con su administrador</string>
+    <string name="task_status_base_data">Obteniendo Información</string>
+    <string name="task_status_user_rights_groups">Comprobando Permisos de Usuario</string>
+    <string name="task_status_module_configuration">Comprobando configuración del módulo</string>
+    <string name="task_status_feature_data">Finalizando la carga de datos de la aplicación</string>
+</resources>

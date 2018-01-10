@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="account_sync_settings"
+        android:title="Opciones de Sincronizado">
+        <PreferenceScreen
+            android:key="account_settings"
+            android:summary="Habilitar o deshabilitar sincronización de datos"
+            android:title="Opciones de Sincronizado">
+            <intent android:action="android.settings.SYNC_SETTINGS" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="sync_interval_settings"
+        android:title="Intervalo de Sincronización">
+        <ListPreference
+            android:defaultValue="1440"
+            android:entries="@array/syncInterval"
+            android:entryValues="@array/syncIntervalValues"
+            android:key="sync_interval"
+            android:summary="Definir cada cuanto tiempo se hará la sincronización"
+            android:title="Intervalo de Sincronización" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="sync_data_limit_settings"
+        android:title="Límite de sincronización de datos">
+        <ListPreference
+            android:defaultValue="60"
+            android:entries="@array/syncDataLimit"
+            android:entryValues="@array/syncDataLimitValues"
+            android:key="sync_data_limit"
+            android:summary="Definir datos a sincronizar"
+            android:title="Límite de sincronización de datos" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="notification_settings"
+        android:title="Notificaciones">
+        <RingtonePreference
+            android:defaultValue="@string/notification_default_ring_tone"
+            android:key="phonecall_notification_ringtone"
+            android:ringtoneType="notification"
+            android:summary="Definir sonido de notificación"
+            android:title="Sonido de Notificación" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="hands_up_notification"
+            android:summary="Permite a la aplicación mostrar rápidas notificaciones en pantalla"
+            android:summaryOff="Permite que la aplicación muestre una notificación rápida en la pantalla"
+            android:title="Habilitar notificación de manos arriba" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="crm_lead_settings"
+        android:title="Lead/Oportunidad">
+        <Preference
+            android:key="lead_work_day_start_time"
+            android:summary="Establecer la hora de inicio del día laborable"
+            android:title="Hora de inicio del día" />
+    </PreferenceCategory>
+    <!--<PreferenceCategory-->
+    <!--android:title="Phone calls"-->
+    <!--android:key="crm_phonecalls_settings">-->
+    <!--<SwitchPreference-->
+    <!--android:key="phonecall_allow_caller_window"-->
+    <!--android:title="Show caller window"-->
+    <!--android:summary="Allow application to show caller window with customer opportunity"-->
+    <!--android:summaryOff="Enable to show latest opportunity detail of caller customer"-->
+    <!--android:defaultValue="true" />-->
+    <!--</PreferenceCategory>-->
+
+    <PreferenceCategory
+        android:key="application_about"
+        android:title="@string/title_about">
+        <Preference
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/summary_about_odoo_mobile">
+            <intent android:action="com.odoo.ACTION_ABOUT" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
