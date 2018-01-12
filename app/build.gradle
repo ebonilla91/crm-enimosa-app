@@ -5,11 +5,11 @@ android {
     buildToolsVersion '26'
     defaultConfig {
         manifestPlaceholders = [applicationName: "ENIMOSA CRM"]
-        applicationId "com.odoo.madketing.mobile"
+        applicationId "com.odoo.enimosa.crm"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 7
-        versionName "1.1.0alpha"
+        versionName "1.0"
         multiDexEnabled true
     }
     dexOptions {
