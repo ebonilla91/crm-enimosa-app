@@ -79,9 +79,9 @@ public class OdooLogin extends AppCompatActivity implements View.OnClickListener
         edtPassword = (EditText) findViewById(R.id.edtPassword);
 
         if (BuildConfig.DEBUG) {
-            edtSelfHosted.setText("http://192.168.199.101:8069");
-            edtUsername.setText("admin");
-            edtPassword.setText("admin");
+            edtSelfHosted.setText("http://159.89.138.30:8069");
+            edtUsername.setText("fdelanuez@itc.services");
+            edtPassword.setText("1Itc2018!odooenimosa");
         }
     }
 
