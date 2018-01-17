@@ -8,6 +8,8 @@
         app:showAsAction="always"></item>
     <item
         android:id="@+id/menu_about_github"
+        android:icon="@drawable/ic_action_github"
+        android:title="@string/label_odoo_mobile_on_github"
         app:showAsAction="always"></item>
 
     <item

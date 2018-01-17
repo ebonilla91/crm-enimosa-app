@@ -488,7 +488,7 @@ public class OModel implements ISyncServiceListener {
         if (base_authority != null) {
             return base_authority;
         }
-        return "com.odoo.crm.core.provider.content";
+        return mContext.getApplicationContext().getPackageName() + ".core.provider.content";
     }
 
     public String authority() {
@@ -851,23 +851,18 @@ public class OModel implements ISyncServiceListener {
 
     public int delete(String selection, String[] args, boolean permanently) {
         int count = 0;
-        try {
-            if (permanently) {
-                count = mContext.getContentResolver().delete(uri(), selection, args);
-            } else {
-                List<ODataRow> records = select(new String[]{"_is_active"}, selection, args);
-                for (ODataRow row : records) {
-                    if (row.getBoolean("_is_active")) {
-                        OValues values = new OValues();
-                        values.put("_is_active", "false");
-                        update(row.getInt(OColumn.ROW_ID), values);
-                    }
-                    count++;
+        if (permanently) {
+            count = mContext.getContentResolver().delete(uri(), selection, args);
+        } else {
+            List<ODataRow> records = select(new String[]{"_is_active"}, selection, args);
+            for (ODataRow row : records) {
+                if (row.getBoolean("_is_active")) {
+                    OValues values = new OValues();
+                    values.put("_is_active", "false");
+                    update(row.getInt(OColumn.ROW_ID), values);
                 }
+                count++;
             }
-        }
-        catch (Exception e) {
-            e.printStackTrace();
         }
         return count;
     }
@@ -878,18 +873,13 @@ public class OModel implements ISyncServiceListener {
 
     public boolean delete(int row_id, boolean permanently) {
         int count = 0;
-        try {
-            if (permanently)
-                count = mContext.getContentResolver().delete(Uri.withAppendedPath(uri(), row_id + ""), null, null);
-            else {
-                OValues values = new OValues();
-                values.put("_is_active", "false");
-                update(row_id, values);
-                count++;
-            }
-        }
-        catch(Exception e) {
-            e.printStackTrace();
+        if (permanently)
+            count = mContext.getContentResolver().delete(Uri.withAppendedPath(uri(), row_id + ""), null, null);
+        else {
+            OValues values = new OValues();
+            values.put("_is_active", "false");
+            update(row_id, values);
+            count++;
         }
         return count > 0;
     }

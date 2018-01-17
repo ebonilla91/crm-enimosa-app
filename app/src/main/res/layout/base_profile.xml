@@ -80,7 +80,7 @@
                     android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:controlLabel="Nombre"
+                    app:controlLabel="Name"
                     app:fieldLabelColor="@color/theme_primary"
                     app:fieldName="name"
                     app:fieldTextSize="@dimen/text_size_xmedium"
@@ -90,7 +90,7 @@
                     android:id="@+id/user_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:controlLabel="Usuario"
+                    app:controlLabel="USER LOGIN"
                     app:fieldLabelColor="@color/theme_primary"
                     app:fieldName="user_login"
                     app:fieldTextSize="@dimen/text_size_xmedium"
@@ -99,7 +99,7 @@
                 <odoo.controls.OField
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:controlLabel="URL del Servidor"
+                    app:controlLabel="SERVER URL"
                     app:fieldLabelColor="@color/theme_primary"
                     app:fieldName="server_url"
                     app:fieldTextSize="@dimen/text_size_xmedium"
@@ -108,7 +108,7 @@
                 <odoo.controls.OField
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:controlLabel="Base de Datos"
+                    app:controlLabel="DATABASE"
                     app:fieldLabelColor="@color/theme_primary"
                     app:fieldName="database"
                     app:fieldTextSize="@dimen/text_size_xmedium"
@@ -117,7 +117,7 @@
                 <odoo.controls.OField
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:controlLabel="ENIMOSA CRM VERSIÓN"
+                    app:controlLabel="ODOO VERSION"
                     app:fieldLabelColor="@color/theme_primary"
                     app:fieldName="version"
                     app:fieldTextSize="@dimen/text_size_xmedium"
@@ -126,7 +126,7 @@
                 <odoo.controls.OField
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:controlLabel="Zona Horaria"
+                    app:controlLabel="TIMEZONE"
                     app:fieldLabelColor="@color/theme_primary"
                     app:fieldName="timezone"
                     app:fieldTextSize="@dimen/text_size_xmedium"

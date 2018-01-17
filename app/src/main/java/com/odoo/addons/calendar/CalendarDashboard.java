@@ -162,14 +162,14 @@ public class CalendarDashboard extends BaseFragment implements View.OnClickListe
         if (!hintCaseUtils.isDone()) {
             hintCaseUtils.addHint(
                     new HintCaseItem()
-                            .setTitle("Nuevo!")
-                            .setContent("Crear nuevo evento en un solo toque.")
+                            .setTitle("New!")
+                            .setContent("Create new event on single tap.")
                             .setViewId(R.id.week_days)
             );
             hintCaseUtils.addHint(
                     new HintCaseItem()
-                            .setTitle("Menú de Hoy")
-                            .setContent("Calendario de redireccionamiento rápido a hoy")
+                            .setTitle("Today Menu")
+                            .setContent("Quick redirect calendar to today")
                             .setViewId(R.id.menu_dashboard_goto_today));
         }
     }
@@ -783,7 +783,7 @@ public class CalendarDashboard extends BaseFragment implements View.OnClickListe
     @Override
     public List<ODrawerItem> drawerMenus(Context context) {
         List<ODrawerItem> menu = new ArrayList<>();
-        menu.add(new ODrawerItem(KEY).setTitle("Calendario")
+        menu.add(new ODrawerItem(KEY).setTitle("Calendar")
                 .setInstance(new CalendarDashboard())
                 .setIcon(R.drawable.ic_action_dashboard));
         return menu;

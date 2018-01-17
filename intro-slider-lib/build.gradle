@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '26'
+    buildToolsVersion "23.0.2"
 
     defaultConfig {
         minSdkVersion 8
@@ -15,12 +15,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
-
-    lintOptions {
-        abortOnError false
-    }
-
 }
+
 dependencies {
     compile 'com.android.support:support-v4:23.2.0'
 }

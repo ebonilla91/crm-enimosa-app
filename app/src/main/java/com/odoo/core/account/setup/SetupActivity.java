@@ -47,7 +47,7 @@ public class SetupActivity extends AppCompatActivity {
         progressBar = (ProgressBar) findViewById(R.id.setupProgress);
         progressBar.setMax(100);
         OControls.setText(findViewById(android.R.id.content), R.id.txvUsername,
-                String.format("Hola %s", mUser.getName()));
+                String.format("Hello %s", mUser.getName()));
         if (!mUser.getAvatar().equals("false")) {
             Bitmap bitmap = BitmapUtils.getBitmapImage(this, mUser.getAvatar());
             if (bitmap != null)

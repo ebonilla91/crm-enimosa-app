@@ -72,7 +72,7 @@ public class OdooUserObjectUpdater extends AlertDialog {
             Bitmap img = BitmapUtils.getBitmapImage(mContext, avatar);
             OControls.setImage(view, R.id.userAvatar, img);
         }
-        OControls.setText(view, R.id.userName, "Hola " + user.getName());
+        OControls.setText(view, R.id.userName, "Hello " + user.getName());
     }
 
 

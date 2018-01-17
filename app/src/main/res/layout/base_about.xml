@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent">
@@ -12,11 +11,11 @@
         android:layout_height="wrap_content"
         android:background="@color/theme_primary"
         android:minHeight="?attr/actionBarSize"
-        android:paddingRight="@dimen/default_8dp"
+        app:titleMarginStart="@dimen/default_16dp"
         android:paddingTop="@dimen/statusBarHeight"
+        android:paddingRight="@dimen/default_8dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-        app:theme="@style/ToolBarTheme"
-        app:titleMarginStart="@dimen/default_16dp" />
+        app:theme="@style/ToolBarTheme" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -45,7 +44,7 @@
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/logo_honda"
+                    android:src="@drawable/odoo_mobile_small"
                     android:tint="#ffffff" />
 
                 <TextView
@@ -78,7 +77,6 @@
                 android:background="#ffffff"
                 android:orientation="vertical"
                 android:padding="20dp">
-
 
                 <TextView
                     android:id="@+id/line1"
@@ -117,7 +115,7 @@
 
                 <TextView
                     android:id="@+id/line4"
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@string/font_light"
                     android:gravity="left"

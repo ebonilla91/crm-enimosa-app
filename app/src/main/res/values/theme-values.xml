@@ -2,11 +2,11 @@
 <resources>
 
     <!-- Application Base Theme Colors -->
-    <color name="theme_primary">#DD3333</color>
-    <color name="theme_primary_dark">#d74d01</color>
-    <color name="theme_primary_medium">#000000</color>
-    <color name="theme_primary_light">#000000</color>
-    <color name="theme_accent">#000000</color>
+    <color name="theme_primary">#a24689</color>
+    <color name="theme_primary_dark">#6d2f5c</color>
+    <color name="theme_primary_medium">#bf52a0</color>
+    <color name="theme_primary_light">#c272ac</color>
+    <color name="theme_accent">#21b799</color>
     <color name="theme_secondary">#009688</color>
     <color name="theme_secondary_dark">#00635a</color>
     <color name="theme_secondary_light">#00c9b6</color>

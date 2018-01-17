@@ -159,7 +159,7 @@ public class ODateUtils {
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat(dateFormat);
             if (!hasDefaultTimezone) {
-                simpleDateFormat.setTimeZone(TimeZone.getDefault());
+                simpleDateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
             }
             dateObj = simpleDateFormat.parse(date);
         } catch (Exception e) {
@@ -182,7 +182,7 @@ public class ODateUtils {
         Date date = cal.getTime();
         SimpleDateFormat gmtFormat = new SimpleDateFormat();
         gmtFormat.applyPattern("yyyy-MM-dd 00:00:00");
-        TimeZone gmtTime = TimeZone.getDefault();
+        TimeZone gmtTime = TimeZone.getTimeZone("GMT");
         gmtFormat.setTimeZone(gmtTime);
         return gmtFormat.format(date);
     }

@@ -58,11 +58,12 @@
 
             <odoo.controls.OField
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 app:fieldName="partner_id"
-                app:fieldTextAppearance="?android:textAppearanceMedium"
+                app:showLabel="true"
                 app:iconResource="@drawable/ic_action_user"
-                app:widgetType="SearchableLive" />
+                app:widgetType="SearchableLive"
+                app:fieldTextAppearance="?android:textAppearanceMedium"
+                android:layout_height="wrap_content" />
 
             <View style="@style/ViewSeparator" />
 
@@ -120,14 +121,14 @@
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="Administrar líneas de pedido"
+                    android:text="Manage order lines"
                     android:textAllCaps="true"
-                    android:textAppearance="?android:textAppearanceSmall"
                     android:textColor="@color/android_orange_dark"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_height="match_parent" />
 
             </LinearLayout>
 
@@ -150,12 +151,12 @@
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_vertical|right"
                     android:padding="@dimen/default_8dp"
-                    android:text="Importe sin Impuestos"
-                    android:textAppearance="?android:textAppearanceSmall" />
+                    android:text="Untaxed Amount:"
+                    android:gravity="center_vertical|right"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_height="match_parent" />
 
                 <TextView
                     android:id="@+id/untaxedTotal"
@@ -190,12 +191,12 @@
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_vertical|right"
                     android:padding="@dimen/default_8dp"
-                    android:text="Impuestos :"
-                    android:textAppearance="?android:textAppearanceSmall" />
+                    android:text="Taxes :"
+                    android:gravity="center_vertical|right"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_height="match_parent" />
 
                 <TextView
                     android:id="@+id/taxesTotal"

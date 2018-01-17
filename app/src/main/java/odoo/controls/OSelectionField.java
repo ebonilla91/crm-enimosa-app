@@ -609,17 +609,7 @@ public class OSelectionField extends LinearLayout implements IOControlData,
                 args, rel_model.getDefaultNameColumn());
         ODataRow row = new ODataRow();
         row.put(OColumn.ROW_ID, -1);
-        if(column.getLabel() == "Country"){
-            row.put(rel_model.getDefaultNameColumn(), "No hay país seleccionado");
-        } else if(column.getLabel() == "Related Company"){
-            row.put(rel_model.getDefaultNameColumn(), "No hay compañía relacionada seleccionada");
-        } else if(column.getLabel() == "Customer"){
-            row.put(rel_model.getDefaultNameColumn(), "No hay cliente seleccionado");
-        } else if(column.getLabel() == "Payment Term"){
-            row.put(rel_model.getDefaultNameColumn(), "No hay plazo de pago seleccionado");
-        } else {
-            row.put(rel_model.getDefaultNameColumn(), "No hay " + column.getLabel() +  " seleccionado");
-        }
+        row.put(rel_model.getDefaultNameColumn(), "No " + column.getLabel() + " selected");
         items.add(row);
         items.addAll(rows);
         return items;

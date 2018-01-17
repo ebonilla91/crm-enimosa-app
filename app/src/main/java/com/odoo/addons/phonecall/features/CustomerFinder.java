@@ -116,7 +116,7 @@ public class CustomerFinder {
                             }
                         }
                     } else {
-                        Log.i(TAG, "No hay cliente en el servidor con número " + number);
+                        Log.i(TAG, "No Customer found on server with number " + number);
                     }
                 } catch (Exception e) {
                     e.printStackTrace();

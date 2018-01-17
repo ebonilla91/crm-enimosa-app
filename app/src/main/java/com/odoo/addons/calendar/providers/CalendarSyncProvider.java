@@ -82,7 +82,7 @@ public class CalendarSyncProvider extends BaseModelProvider {
         Cursor eventCR = getContext().getContentResolver().query(events.uri(),
                 base_projection, where, args.toArray(new String[args.size()]), "is_done, date_start");
         if (eventCR.getCount() > 0)
-            event_separator.addRow(new String[]{"0", "separator", "Reuniones"});
+            event_separator.addRow(new String[]{"0", "separator", "Meetings"});
 
 
         // Getting phone calls

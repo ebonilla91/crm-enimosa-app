@@ -58,14 +58,14 @@ public class SaleOrder extends OModel {
     public static final String AUTHORITY = "com.odoo.crm.provider.content.sync.sale_order";
     private Context mContext;
     OColumn name = new OColumn("name", OVarchar.class);
-    OColumn date_order = new OColumn("Fecha", ODateTime.class);
+    OColumn date_order = new OColumn("Date", ODateTime.class);
     @Odoo.onChange(method = "onPartnerIdChange", bg_process = true)
-    OColumn partner_id = new OColumn("Cliente", ResPartner.class,
+    OColumn partner_id = new OColumn("Customer", ResPartner.class,
             OColumn.RelationType.ManyToOne).setRequired();
     OColumn user_id = new OColumn("Salesperson", ResUsers.class,
             OColumn.RelationType.ManyToOne);
     OColumn amount_total = new OColumn("Total", OFloat.class);
-    OColumn payment_term = new OColumn("Plazo de Pago", AccountPaymentTerm.class, OColumn.RelationType.ManyToOne);
+    OColumn payment_term = new OColumn("Payment Term", AccountPaymentTerm.class, OColumn.RelationType.ManyToOne);
     OColumn amount_untaxed = new OColumn("Untaxed", OInteger.class);
     OColumn amount_tax = new OColumn("Tax", OInteger.class);
     OColumn client_order_ref = new OColumn("Client Order Reference",

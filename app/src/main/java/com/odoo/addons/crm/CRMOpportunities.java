@@ -111,8 +111,8 @@ public class CRMOpportunities extends BaseFragment implements OCursorListAdapter
         if (!hintCaseUtils.isDone()) {
             hintCaseUtils.addHint(
                     new HintCaseItem()
-                            .setTitle("Nuevo")
-                            .setContent("Crear nuevas oportunidades en un solo toque.")
+                            .setTitle("New")
+                            .setContent("Create new Opportunity on single tap.")
                             .setViewId(R.id.fabButton)
                             .withCircleShape());
         }

@@ -39,8 +39,6 @@ import com.odoo.addons.calendar.utils.ReminderDialog;
 import com.odoo.core.orm.ODataRow;
 import com.odoo.core.orm.OValues;
 import com.odoo.core.orm.fields.OColumn;
-import com.odoo.core.orm.fields.types.ODate;
-import com.odoo.core.orm.fields.types.ODateTime;
 import com.odoo.core.support.OdooCompatActivity;
 import com.odoo.core.utils.OAlert;
 import com.odoo.core.utils.OAppBarUtils;
@@ -52,8 +50,6 @@ import com.odoo.core.utils.reminder.ReminderReceiver;
 import com.odoo.core.utils.reminder.ReminderUtils;
 import com.odoo.R;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import odoo.controls.OField;
@@ -66,7 +62,7 @@ public class EventDetail extends OdooCompatActivity implements View.OnClickListe
     public static final String KEY_RESCHEDULE = "key_reschedule";
     private static final String KEY_EXTRA_EVENT_COLOR = "event_color";
     private static final String KEY_COLOR_DATA = "color_data";
-    private String mEventColor = "#fb5a01";
+    private String mEventColor = CalendarUtils.getBackgroundColors()[0];
     private OForm eventForm;
     private Integer mEventColorCode = 0;
     private ReminderDialog.ReminderItem mReminder;
@@ -162,11 +158,6 @@ public class EventDetail extends OdooCompatActivity implements View.OnClickListe
                 Toast.makeText(this, R.string.toast_event_marked_done, Toast.LENGTH_LONG).show();
                 extra.remove(KEY_RESCHEDULE);
             }
-        }
-        if (event_date_start.getValue() == null || event_date_end.getValue() == null) {
-            String timeStamp = new SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().getTime());
-            event_date_start.setValue(timeStamp);
-            event_date_end.setValue(timeStamp);
         }
     }
 

@@ -7,15 +7,15 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
+        android:paddingTop="@dimen/statusBarHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/theme_primary"
         android:minHeight="?attr/actionBarSize"
+        app:titleMarginStart="@dimen/default_16dp"
         android:paddingRight="@dimen/default_16dp"
-        android:paddingTop="@dimen/statusBarHeight"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-        app:theme="@style/ToolBarTheme"
-        app:titleMarginStart="@dimen/default_16dp" />
+        app:theme="@style/ToolBarTheme" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -257,7 +257,7 @@
                         android:fontFamily="@string/font_normal"
                         android:gravity="center_vertical"
                         android:paddingLeft="16dp"
-                        android:text="Color por defecto"
+                        android:text="Default Color"
                         android:textSize="@dimen/text_size_xmedium" />
                 </LinearLayout>
 

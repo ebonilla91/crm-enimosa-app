@@ -127,7 +127,7 @@ public class ODateTimeField extends LinearLayout implements IOControlData,
     public void setValue(Object value) {
         mValue = value;
         if (value == null || value.toString().equals("false")) {
-            txvText.setText("Seleccionar Valor");
+            txvText.setText("No Value");
             return;
         }
         txvText.setText(getDate(mValue.toString(), mParsePattern));

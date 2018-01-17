@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion '26'
+    buildToolsVersion "24.0.0"
     defaultConfig {
-        manifestPlaceholders = [applicationName: "ENIMOSA CRM"]
-        applicationId "com.odoo.enimosa.crm"
+        manifestPlaceholders = [applicationName: "CRM"]
+        applicationId "com.odoo.crm"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 7
-        versionName "1.0"
+        versionName "1.1.0alpha"
         multiDexEnabled true
     }
     dexOptions {
@@ -27,11 +27,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-    lintOptions {
-        abortOnError false
-    }
-
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')

@@ -97,7 +97,7 @@ public class SetupIntentService extends IntentService {
 
         // Check for user access to each modules.
         // Returns, if user have no any access to use sale/crm app
-        if (false) {
+        if (!checkUserAccessGroup()) {
             Log.e(TAG, "User has no access to application.");
             return;
         }

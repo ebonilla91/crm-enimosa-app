@@ -123,8 +123,8 @@ public class CRMLeads extends BaseFragment implements OCursorListAdapter.OnViewB
         if (!hintCaseUtils.isDone()) {
             hintCaseUtils.addHint(
                     new HintCaseItem()
-                            .setTitle("Nuevo")
-                            .setContent("Crear nuevos leads en un solo toque.")
+                            .setTitle("New")
+                            .setContent("Create new Leads on single tap.")
                             .setViewId(R.id.fabButton)
                             .withCircleShape());
         }
@@ -218,7 +218,7 @@ public class CRMLeads extends BaseFragment implements OCursorListAdapter.OnViewB
                     setHasSwipeRefreshView(mView, R.id.customer_no_items, CRMLeads.this);
                     OControls.setImage(mView, R.id.icon, R.drawable.ic_action_leads
                     );
-                    OControls.setText(mView, R.id.title, "Iniciativas no encontradas");
+                    OControls.setText(mView, R.id.title, "No Leads Found");
                     OControls.setText(mView, R.id.subTitle, "");
                 }
             }, 500);
@@ -378,10 +378,10 @@ public class CRMLeads extends BaseFragment implements OCursorListAdapter.OnViewB
                         if (!contact.equals("false")) {
                             IntentUtils.requestCall(getActivity(), contact);
                         } else {
-                            Toast.makeText(getActivity(), "No se encuentra el contacto !", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getActivity(), "No contact found !", Toast.LENGTH_LONG).show();
                         }
                     } else {
-                        Toast.makeText(getActivity(), "No se encuentra el contacto !", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "No contact found !", Toast.LENGTH_LONG).show();
                     }
                 } else {
                     IntentUtils.requestCall(getActivity(), contact);
@@ -393,10 +393,10 @@ public class CRMLeads extends BaseFragment implements OCursorListAdapter.OnViewB
                     if (!address.equals("false") && !TextUtils.isEmpty(address)) {
                         IntentUtils.redirectToMap(getActivity(), address);
                     } else {
-                        Toast.makeText(getActivity(), "No se encuentra la ubicacion !", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "No location found !", Toast.LENGTH_LONG).show();
                     }
                 } else {
-                    Toast.makeText(getActivity(), "No se encuentra la ubicacion !", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "No partner found !", Toast.LENGTH_LONG).show();
                 }
                 break;
             case R.id.menu_lead_lost:

@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
             android:layout_marginTop="40dp"
-            android:src="@drawable/logo_honda"
+            android:src="@drawable/odoo_small"
             android:tint="#ffffff" />
 
         <LinearLayout
@@ -36,6 +36,54 @@
                 android:orientation="vertical">
 
                 <!-- Self Hosted URL Input -->
+                <LinearLayout
+                    android:id="@+id/layoutSelfHosted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_action_universe"
+                        android:tint="@color/body_text_3" />
+
+                    <EditText
+                        android:id="@+id/edtSelfHostedURL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:fontFamily="@string/font_light"
+                        android:gravity="center_vertical"
+                        android:hint="@string/label_your_self_hosted_url"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColorHint="@color/body_text_3" />
+
+                    <ProgressBar
+                        android:id="@+id/serverURLCheckProgress"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imgValidURL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_action_done"
+                        android:tint="@color/theme_primary"
+                        android:visibility="gone" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
@@ -169,7 +217,7 @@
                 android:text="@string/label_accept_login"
                 android:textColor="#fff" />
 
-            <!--<TextView
+            <TextView
                 android:id="@+id/forgot_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -179,9 +227,9 @@
                 android:padding="5dp"
                 android:text="@string/label_forgot_password"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#ebebeb" />-->
+                android:textColor="#ebebeb" />
 
-            <!--<TextView
+            <TextView
                 android:id="@+id/txvAddSelfHosted"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -192,9 +240,9 @@
                 android:padding="5dp"
                 android:text="@string/label_add_self_hosted_url"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#ffffff" />-->
+                android:textColor="#ffffff" />
 
-            <!--<TextView
+            <TextView
                 android:id="@+id/create_account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -204,7 +252,7 @@
                 android:text="@string/label_create_account"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#ffffff"
-                android:textStyle="bold" />-->
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/odoo_version"
@@ -217,7 +265,6 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="#99ffffff"
                 android:textStyle="bold" />
-
         </LinearLayout>
 
         <LinearLayout

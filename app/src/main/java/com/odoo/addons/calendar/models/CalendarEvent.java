@@ -48,32 +48,32 @@ public class CalendarEvent extends OModel {
     public static final String AUTHORITY = "com.odoo.crm.provider.content.sync.calendar_event";
     private Context mContext;
 
-    OColumn name = new OColumn("Nombre de Reunión", OVarchar.class).setSize(64).setRequired();
+    OColumn name = new OColumn("Meeting Name", OVarchar.class).setSize(64).setRequired();
     @Odoo.api.v7
-    OColumn date = new OColumn("Día Inicio", ODateTime.class);
+    OColumn date = new OColumn("Start Date", ODateTime.class);
     @Odoo.api.v8
     @Odoo.api.v9
-    OColumn start_date = new OColumn("Día Inicio", ODate.class);
+    OColumn start_date = new OColumn("Start Date", ODate.class);
     @Odoo.api.v8
     @Odoo.api.v9
-    OColumn start_datetime = new OColumn("Día Inicio", ODateTime.class);
+    OColumn start_datetime = new OColumn("Start Date", ODateTime.class);
     @Odoo.api.v7
-    OColumn date_deadline = new OColumn("Fecha Límite", ODateTime.class);
+    OColumn date_deadline = new OColumn("Dead Line", ODateTime.class);
     @Odoo.api.v8
     @Odoo.api.v9
-    OColumn stop_date = new OColumn("Fecha Final", ODate.class);
+    OColumn stop_date = new OColumn("Stop Date", ODate.class);
     @Odoo.api.v8
     @Odoo.api.v9
-    OColumn stop_datetime = new OColumn("Fecha Final", ODateTime.class);
-    OColumn duration = new OColumn("Duración", OVarchar.class).setSize(32);
-    OColumn allday = new OColumn("Todo el Día", OBoolean.class);
-    OColumn description = new OColumn("Descripción", OText.class);
-    OColumn location = new OColumn("Localización", OText.class);
+    OColumn stop_datetime = new OColumn("Stop Date", ODateTime.class);
+    OColumn duration = new OColumn("Duration", OVarchar.class).setSize(32);
+    OColumn allday = new OColumn("All Day", OBoolean.class);
+    OColumn description = new OColumn("Description", OText.class);
+    OColumn location = new OColumn("Location", OText.class);
 
     OColumn _class = new OColumn("Privacy", OSelection.class)
-            .addSelection("public", "Público")
-            .addSelection("private", "Privado")
-            .addSelection("confidential", "Público para Empleados")
+            .addSelection("public", "Public")
+            .addSelection("private", "Private")
+            .addSelection("confidential", "Public for Employees")
             .setDefaultValue("public");
 
     @Odoo.Functional(store = true, depends = {"date", "start_date",

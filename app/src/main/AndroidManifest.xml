@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.odoo">
-    <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -21,11 +21,11 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
-
+    <uses-permission android:name="android.permission.CAMERA" />
 
 
     <permission
-        android:name="com.odoo.crm.permission.C2D_MESSAGE"
+        android:name="${applicationId}.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
     <application
@@ -86,7 +86,7 @@
         </receiver>
         <receiver android:name=".server.notifications.OdooServerNotificationReceiver">
             <intent-filter>
-                <action android:name="com.odoo.crm.odoo.mobile.SERVER_NOTIFICATION" />
+                <action android:name="${applicationId}.odoo.mobile.SERVER_NOTIFICATION" />
             </intent-filter>
         </receiver>
 
@@ -102,17 +102,17 @@
 
         <provider
             android:name=".core.orm.provider.BaseModelProvider"
-            android:authorities="com.odoo.crm.core.provider.content"
+            android:authorities="${applicationId}.core.provider.content"
             android:multiprocess="true" />
         <provider
             android:name=".base.addons.ir.providers.IrModelProvider"
-            android:authorities="com.odoo.crm.core.provider.content.sync.ir_model"
+            android:authorities="${applicationId}.core.provider.content.sync.ir_model"
             android:multiprocess="true" />
 
         <!-- Sync Provider & Service  // -->
         <provider
             android:name=".addons.customers.providers.CustomersSyncProvider"
-            android:authorities="com.odoo.crm.provider.content.sync.res_partner"
+            android:authorities="${applicationId}.provider.content.sync.res_partner"
             android:label="@string/sync_label_customers"
             android:multiprocess="true" />
 
@@ -131,7 +131,7 @@
 
         <provider
             android:name=".addons.calendar.providers.CalendarSyncProvider"
-            android:authorities="com.odoo.crm.provider.content.sync.calendar_event"
+            android:authorities="${applicationId}.provider.content.sync.calendar_event"
             android:label="@string/sync_label_calendar"
             android:multiprocess="true" />
 
@@ -150,7 +150,7 @@
 
         <provider
             android:name=".addons.crm.providers.CRMLeadProvider"
-            android:authorities="com.odoo.crm.provider.content.sync.crm_lead"
+            android:authorities="${applicationId}.provider.content.sync.crm_lead"
             android:label="@string/sync_label_lead_opportunities"
             android:multiprocess="true" />
 
@@ -169,7 +169,7 @@
 
         <provider
             android:name=".addons.sale.providers.SaleOrderProvider"
-            android:authorities="com.odoo.crm.provider.content.sync.sale_order"
+            android:authorities="${applicationId}.provider.content.sync.sale_order"
             android:label="@string/sync_label_quotation_sales_orders"
             android:multiprocess="true" />
 
@@ -188,7 +188,7 @@
 
         <provider
             android:name=".addons.phonecall.providers.PhoneCallProvider"
-            android:authorities="com.odoo.crm.provider.content.sync.crm_phonecall"
+            android:authorities="${applicationId}.provider.content.sync.crm_phonecall"
             android:label="@string/sync_label_phonecalls"
             android:multiprocess="true" />
 

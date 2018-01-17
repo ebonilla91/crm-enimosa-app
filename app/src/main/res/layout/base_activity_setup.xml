@@ -70,6 +70,6 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/default_24dp"
         android:layout_marginBottom="@dimen/default_16dp"
-        android:src="@drawable/logo_honda"
+        android:src="@drawable/odoo_small"
         android:tint="#fff" />
 </LinearLayout>
