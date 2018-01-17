@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">CRM</string>
+    <string name="app_name">ENIMOSA CRM</string>
     <string name="label_today">Today</string>
     <!-- Sync Labels// -->
     <string name="sync_label_customers">Customers</string>
