@@ -97,10 +97,10 @@ public class SetupIntentService extends IntentService {
 
         // Check for user access to each modules.
         // Returns, if user have no any access to use sale/crm app
-        if (!checkUserAccessGroup()) {
+        /*if (!checkUserAccessGroup()) {
             Log.e(TAG, "User has no access to application.");
             return;
-        }
+        }*/
         // Master records for each model references
         Log.v(TAG, "Processing master record models for each model");
         pushTaskStatus(KEY_TASK_FEATURE_DATA);
