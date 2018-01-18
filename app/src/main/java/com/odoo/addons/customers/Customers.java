@@ -112,8 +112,8 @@ public class Customers extends BaseFragment implements ISyncStatusObserverListen
         if (!hintCaseUtils.isDone()) {
             hintCaseUtils.addHint(
                     new HintCaseItem()
-                            .setTitle("New")
-                            .setContent("Create new Customer on single tap.")
+                            .setTitle("Nuevo")
+                            .setContent("Crear nuevo cliente en un solo toque.")
                             .setViewId(R.id.fabButton)
                             .withCircleShape());
         }

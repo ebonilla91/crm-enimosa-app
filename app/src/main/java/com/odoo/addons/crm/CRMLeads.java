@@ -123,8 +123,8 @@ public class CRMLeads extends BaseFragment implements OCursorListAdapter.OnViewB
         if (!hintCaseUtils.isDone()) {
             hintCaseUtils.addHint(
                     new HintCaseItem()
-                            .setTitle("New")
-                            .setContent("Create new Leads on single tap.")
+                            .setTitle("Nuevo")
+                            .setContent("Crear nuevos leads en un solo toque.")
                             .setViewId(R.id.fabButton)
                             .withCircleShape());
         }
