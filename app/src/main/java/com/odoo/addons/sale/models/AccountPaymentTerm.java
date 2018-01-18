@@ -32,7 +32,7 @@ import com.odoo.core.support.OUser;
 public class AccountPaymentTerm extends OModel {
     public static final String TAG = AccountPaymentTerm.class.getSimpleName();
 
-    OColumn name = new OColumn("Payment Term", OVarchar.class);
+    OColumn name = new OColumn("Plazo de pago", OVarchar.class);
     OColumn active = new OColumn("Active", OBoolean.class);
 
     public AccountPaymentTerm(Context context, OUser user) {

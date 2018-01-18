@@ -112,7 +112,7 @@ public class CustomerDetails extends OdooCompatActivity
         }
         if (edit) {
             if (extras == null) {
-                collapsingToolbarLayout.setTitle("New");
+                collapsingToolbarLayout.setTitle("Nuevo");
             }
             mForm = (OForm) findViewById(R.id.customerFormEdit);
             findViewById(R.id.customer_view_layout).setVisibility(View.GONE);

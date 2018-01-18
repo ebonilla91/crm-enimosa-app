@@ -257,7 +257,7 @@
                         android:fontFamily="@string/font_normal"
                         android:gravity="center_vertical"
                         android:paddingLeft="16dp"
-                        android:text="Default Color"
+                        android:text="Por defecto"
                         android:textSize="@dimen/text_size_xmedium" />
                 </LinearLayout>
 

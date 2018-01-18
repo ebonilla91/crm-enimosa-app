@@ -30,9 +30,9 @@ public class CalendarUtils {
     private static String[] background_colors = {"#a24689", "#d40000",
             "#f24f1d", "#f5be27", "#0a7d40", "#35b579", "#029ce3", "#405ea8",
             "#7986c9", "#8b23a8", "#e37971", "#616161"};
-    private static String[] color_label = {"Default Color", "Tomato",
-            "Tangerine", "Banana", "Basil", "Sage", "Peacock", "Blueberry",
-            "Lavender", "Grape", "Flamingo", "Graphite"};
+    private static String[] color_label = {"Por defecto", "Rojo",
+            "Naranja", "Amarillo", "Verde", "Verde Claro", "Celeste", "Azul",
+            "Azul Marino", "Morado", "Rosado", "Gris"};
 
     public static String[] getBackgroundColors() {
         return background_colors;
@@ -53,7 +53,7 @@ public class CalendarUtils {
         if (color_number < color_label.length) {
             return color_label[color_number];
         }
-        return "Default Color";
+        return "Por defecto";
     }
 
     public static ODataRow getColorData(int index) {

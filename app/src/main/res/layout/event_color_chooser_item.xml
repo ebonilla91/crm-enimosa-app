@@ -20,7 +20,7 @@
         android:layout_weight="1"
         android:fontFamily="@string/font_normal"
         android:gravity="center_vertical"
-        android:text="Default Color"
+        android:text="P{or defecto"
         android:textSize="16dp" />
 
     <ImageView
