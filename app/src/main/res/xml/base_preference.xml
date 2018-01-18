@@ -3,60 +3,60 @@
 
     <PreferenceCategory
         android:key="account_sync_settings"
-        android:title="Sync Settings">
+        android:title="Opciones de Sincronizado">
         <PreferenceScreen
             android:key="account_settings"
-            android:summary="Enable or disable data synchronization"
-            android:title="Sync Settings">
+            android:summary="Habilitar o deshabilitar sincronización de datos"
+            android:title="Opciones de Sincronizado">
             <intent android:action="android.settings.SYNC_SETTINGS" />
         </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory
         android:key="sync_interval_settings"
-        android:title="Sync interval">
+        android:title="Intervalo de Sincronización">
         <ListPreference
             android:defaultValue="1440"
             android:entries="@array/syncInterval"
             android:entryValues="@array/syncIntervalValues"
             android:key="sync_interval"
-            android:summary="Define how often synchronization will be performed"
-            android:title="Sync interval" />
+            android:summary="Definir cada cuanto tiempo se hará la sincronización"
+            android:title="Intervalo de Sincronización" />
     </PreferenceCategory>
     <PreferenceCategory
         android:key="sync_data_limit_settings"
-        android:title="Data Sync Limit">
+        android:title="Límite de sincronización de datos">
         <ListPreference
             android:defaultValue="60"
             android:entries="@array/syncDataLimit"
             android:entryValues="@array/syncDataLimitValues"
             android:key="sync_data_limit"
-            android:summary="Define how old data to be synchronized"
-            android:title="Sync data limit" />
+            android:summary="Definir datos a sincronizar"
+            android:title="Límite de sincronización de datos" />
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="Notifications"
-        android:key="notification_settings">
+        android:key="notification_settings"
+        android:title="Notificaciones">
         <RingtonePreference
-            android:key="phonecall_notification_ringtone"
-            android:title="Notification ring tone"
-            android:ringtoneType="notification"
             android:defaultValue="@string/notification_default_ring_tone"
-            android:summary="Set notification ring tone" />
+            android:key="phonecall_notification_ringtone"
+            android:ringtoneType="notification"
+            android:summary="Definir sonido de notificación"
+            android:title="Sonido de Notificación" />
         <SwitchPreference
+            android:defaultValue="false"
             android:key="hands_up_notification"
-            android:title="Enable hands up notification"
-            android:summary="Allow application to show quick notification on screen"
-            android:summaryOff="Enable to allow application to show quick notification on screen"
-            android:defaultValue="false" />
+            android:summary="Permite a la aplicación mostrar rápidas notificaciones en pantalla"
+            android:summaryOff="Permite que la aplicación muestre una notificación rápida en la pantalla"
+            android:title="Habilitar notificación de manos arriba" />
     </PreferenceCategory>
     <PreferenceCategory
-        android:title="Lead/Opportunity"
-        android:key="crm_lead_settings">
+        android:key="crm_lead_settings"
+        android:title="Iniciativa/Oportunidad">
         <Preference
             android:key="lead_work_day_start_time"
-            android:title="Day start time"
-            android:summary="Set your working day start time" />
+            android:summary="Establecer la hora de inicio del día laborable"
+            android:title="Hora de inicio del día" />
     </PreferenceCategory>
     <!--<PreferenceCategory-->
     <!--android:title="Phone calls"-->
@@ -73,7 +73,7 @@
         android:key="application_about"
         android:title="@string/title_about">
         <Preference
-            android:icon="@drawable/ic_odoo_o"
+            android:icon="@mipmap/ic_launcher"
             android:title="@string/summary_about_odoo_mobile">
             <intent android:action="com.odoo.ACTION_ABOUT" />
         </Preference>

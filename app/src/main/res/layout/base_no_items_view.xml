@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@string/font_light"
-            android:text="Your day is wide open"
+            android:text="Tu día está libre"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#aaaaaa"
             android:textStyle="bold" />
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@string/font_light"
-            android:text="Tap to add meeting"
+            android:text="Toca para añadir una reunión"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="#ababab"
             android:textStyle="bold" />

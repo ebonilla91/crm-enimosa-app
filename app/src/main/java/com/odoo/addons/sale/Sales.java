@@ -199,7 +199,7 @@ public class Sales extends BaseFragment implements
                     setHasSwipeRefreshView(mView, R.id.customer_no_items, Sales.this);
                     OControls.setImage(mView, R.id.icon,
                             (mType == Type.Quotation) ? R.drawable.ic_action_quotation : R.drawable.ic_action_sale_order);
-                    OControls.setText(mView, R.id.title, "No " + mType + " Found");
+                    OControls.setText(mView, R.id.title, "Cotizaciones no encontradas");
                     OControls.setText(mView, R.id.subTitle, "");
                 }
             }, 500);
