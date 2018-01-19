@@ -52,30 +52,30 @@ public class CRMPhoneCalls extends OModel {
     public static final String TAG = CRMPhoneCalls.class.getSimpleName();
     public static final String AUTHORITY = "com.odoo.crm.provider.content.sync.crm_phonecall";
     private Context mContext;
-    OColumn user_id = new OColumn("Responsible", ResUsers.class,
+    OColumn user_id = new OColumn("Responsable", ResUsers.class,
             OColumn.RelationType.ManyToOne).setRequired();
-    OColumn partner_id = new OColumn("Contact", ResPartner.class,
+    OColumn partner_id = new OColumn("Contacto", ResPartner.class,
             OColumn.RelationType.ManyToOne).setRequired();
-    OColumn description = new OColumn("Description", OText.class);
-    OColumn state = new OColumn("status", OSelection.class)
-            .addSelection("open", "Confirmed")
-            .addSelection("cancel", "Cancelled")
-            .addSelection("pending", "Pending")
-            .addSelection("done", "Held");
-    OColumn name = new OColumn("Call summary", OVarchar.class).setRequired();
-    OColumn duration = new OColumn("Duration", OFloat.class);
-    OColumn categ_id = new OColumn("Category", CRMPhoneCallsCategory.class,
+    OColumn description = new OColumn("Descripción", OText.class);
+    OColumn state = new OColumn("estado", OSelection.class)
+            .addSelection("open", "Confirmado")
+            .addSelection("cancel", "Cancelado")
+            .addSelection("pending", "Pendiente")
+            .addSelection("done", "Retenida");
+    OColumn name = new OColumn("Resumen de llamadas", OVarchar.class).setRequired();
+    OColumn duration = new OColumn("Duración", OFloat.class);
+    OColumn categ_id = new OColumn("Categoría", CRMPhoneCallsCategory.class,
             OColumn.RelationType.ManyToOne);
-    OColumn date = new OColumn("Date", ODateTime.class);
-    OColumn opportunity_id = new OColumn("Lead/Opportunity", CRMLead.class,
+    OColumn date = new OColumn("Fecha", ODateTime.class);
+    OColumn opportunity_id = new OColumn("Iniciativa/Oportunidad", CRMLead.class,
             OColumn.RelationType.ManyToOne);
-    OColumn call_audio_file = new OColumn("recorded audio file",
+    OColumn call_audio_file = new OColumn("archivo de audio grabado",
             OVarchar.class).setSize(200).setLocalColumn();
-    OColumn data_type = new OColumn("Data type", OVarchar.class).setSize(34)
+    OColumn data_type = new OColumn("Tipo de datos ", OVarchar.class).setSize(34)
             .setLocalColumn().setDefaultValue("phone_call");
-    OColumn is_done = new OColumn("Mark as Done", OInteger.class)
+    OColumn is_done = new OColumn("Marcar como hecho", OInteger.class)
             .setLocalColumn().setDefaultValue("0");
-    OColumn partner_phone = new OColumn("Partner Phone", OVarchar.class).setSize(20);
+    OColumn partner_phone = new OColumn("Teléfono asociado", OVarchar.class).setSize(20);
     @Odoo.Functional(depends = {"opportunity_id"}, store = true, method = "storeLeadName")
     OColumn lead_name = new OColumn("Lead", OVarchar.class).setSize(100)
             .setLocalColumn();
