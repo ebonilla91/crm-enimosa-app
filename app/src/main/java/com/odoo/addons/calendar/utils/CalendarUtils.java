@@ -27,7 +27,7 @@ import com.odoo.core.orm.ODataRow;
 
 public class CalendarUtils {
     public static final String TAG = CalendarUtils.class.getSimpleName();
-    private static String[] background_colors = {"#a24689", "#d40000",
+    private static String[] background_colors = {"#DD3333", "#d40000",
             "#f24f1d", "#f5be27", "#0a7d40", "#35b579", "#029ce3", "#405ea8",
             "#7986c9", "#8b23a8", "#e37971", "#616161"};
     private static String[] color_label = {"Por defecto", "Rojo",

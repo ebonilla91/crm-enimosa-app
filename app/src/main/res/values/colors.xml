@@ -5,7 +5,7 @@
 
     <!-- Odoo Theme Colors -->
 
-    <color name="odoo_primary">#a24689</color>
+    <color name="odoo_primary">#DD3333</color>
     <color name="odoo_secondary">#8f8f8f</color>
     <color name="odoo_optional">#21b799</color>
 

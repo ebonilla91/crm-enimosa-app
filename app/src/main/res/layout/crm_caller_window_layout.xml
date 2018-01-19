@@ -94,7 +94,7 @@
 
 
         <ImageView
-            android:src="@drawable/odoo_small"
+            android:src="@drawable/logo_honda"
             android:tint="#ffffff"
             android:layout_marginRight="@dimen/default_16dp"
             android:layout_marginBottom="5dp"
