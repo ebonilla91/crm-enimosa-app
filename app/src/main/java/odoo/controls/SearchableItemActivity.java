@@ -95,7 +95,7 @@ public class SearchableItemActivity extends ActionBarActivity implements
                 selected_position = extra.getInt("selected_position");
             }
             if (extra.containsKey("search_hint")) {
-                edt_searchable_input.setHint("Search "
+                edt_searchable_input.setHint("Buscar "
                         + extra.getString("search_hint"));
             }
             if (resource_array_id != -1) {
