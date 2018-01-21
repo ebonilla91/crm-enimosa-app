@@ -38,30 +38,27 @@ public class IntroSliderItems implements SliderPagerAdapter.SliderBuilderListene
 
     public List<SliderItem> getItems() {
         List<SliderItem> items = new ArrayList<>();
-        items.add(new SliderItem("Daily Planner", "Odoo CRM keeps you organized, focused and more productive",
+        items.add(new SliderItem("Agenda Diaria", "Odoo CRM lo mantiene organizado, enfocado y más productivo.",
                 R.drawable.slide_1, this)
-                .putExtra("sub_title", "Manage everything in one place"));
-        items.add(new SliderItem("Live caller ID", "Get information about customer and recent opportunity before you pickup the phone.",
-                R.drawable.slide_3, this)
-                .putExtra("sub_title", "See who's calling"));
-        items.add(new SliderItem("Reminders", "Use reminders to make sure no phone-calls, meetings or opportunities forgotten",
+                .putExtra("sub_title", "Administra todo en un solo lugar"));
+        items.add(new SliderItem("ID de llamada en vivo", "Obtenga información sobre el cliente y las oportunidades recientes antes de que descuelgue el teléfono.",
+        R.drawable.slide_3, this)
+        .putExtra("sub_title", "Ver quién llama"));
+        items.add(new SliderItem("Recordatorios", "Use recordatorios para asegurarse de que no se olviden llamadas telefónicas, reuniones u oportunidades.",
                 R.drawable.slide_4, this)
-                .putExtra("sub_title", "Reminder with quick actions"));
-        items.add(new SliderItem("Easy actions", "Odoo CRM offers simple, quick and easy actions at your fingertips",
+                .putExtra("sub_title", "Recordatorio con acciones rápidas"));
+        items.add(new SliderItem("Acciones fáciles", "Odoo CRM ofrece acciones simples, rápidas y fáciles a su alcance.",
                 R.drawable.slide_5, this)
-                .putExtra("sub_title", "Getting things done quickly"));
-        items.add(new SliderItem("Manage quotations", "Create/Manage quotations and manage order lines easily",
+                .putExtra("sub_title", "Hacer las cosas rápidamente"));
+        items.add(new SliderItem("Administrar citas", "Crear/Administrar citas y gestionar líneas de pedido fácilmente.",
                 R.drawable.slide_6, this)
-                .putExtra("sub_title", "Easily manage order lines"));
-        items.add(new SliderItem("", "All the data automatically synchronized with server when you re-connect to internet",
+                .putExtra("sub_title", "Administre fácilmente las líneas de pedido"));
+        items.add(new SliderItem("", "Todos los datos se sincronizan automáticamente con el servidor cuando te vuelves a conectar a Internet.",
                 R.drawable.no_network, this)
-                .putExtra("sub_title", "Works offline"));
-        items.add(new SliderItem("", "Works with Odoo Saas cloud",
-                R.drawable.saas_support, this)
-                .putExtra("sub_title", "Odoo Saas Support"));
-        items.add(new SliderItem("Let's Start", "",
+                .putExtra("sub_title", "Funciona sin conexión"));
+        items.add(new SliderItem("Empecemos", "",
                 R.drawable.odoo_shaded, this)
-                .putExtra("sub_title", "Start exploring Odoo CRM"));
+                .putExtra("sub_title", "Comience a explorar Odoo CRM"));
         return items;
     }
 
