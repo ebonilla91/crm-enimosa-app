@@ -38,7 +38,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ResPartner extends OModel {
-    public static final String AUTHORITY = "com.odoo.crm.provider.content.sync.res_partner";
+    public static final String AUTHORITY = "com.enimosa.crm.provider.content.sync.res_partner";
     OColumn name = new OColumn("Nombre", OVarchar.class).setSize(100).setRequired();
     OColumn is_company = new OColumn("Pertenece a Compañía?", OBoolean.class).setDefaultValue(false);
     OColumn image_small = new OColumn("Avatar", OBlob.class).setDefaultValue(false);

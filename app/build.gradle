@@ -5,11 +5,11 @@ android {
     buildToolsVersion "24.0.0"
     defaultConfig {
         manifestPlaceholders = [applicationName: "ENIMOSA CRM"]
-        applicationId "com.odoo.crm"
+        applicationId "com.enimosa.crm"
         minSdkVersion 15
         targetSdkVersion 24
-        versionCode 7
-        versionName "1.1.0alpha"
+        versionCode 8
+        versionName "1.1.0beta"
         multiDexEnabled true
     }
     dexOptions {
@@ -43,7 +43,7 @@ dependencies {
 
 /**
  * Application Package checker.
- * Required to change application Id 'com.odoo.crm' and application name 'CRM'
+ * Required to change application Id 'com.enimosa.crm' and application name 'CRM'
  */
 task compilePreCheck(dependsOn: build) {
     if (project.getProperty("checkForPackageName") == "true") {

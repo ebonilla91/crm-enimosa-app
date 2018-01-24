@@ -57,7 +57,7 @@ public class OdooLogin extends AppCompatActivity implements View.OnClickListener
     private TextView mLoginProcessStatus = null;
     private App mApp;
     private Odoo mOdoo;
-    private String odooServerUrl = "http://159.89.138.30:8069/";
+    private String odooServerUrl = "http://159.89.138.30:8069";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,8 +77,8 @@ public class OdooLogin extends AppCompatActivity implements View.OnClickListener
         edtPassword = (EditText) findViewById(R.id.edtPassword);
 
         if (BuildConfig.DEBUG) {
-            edtUsername.setText("fdelanuez@itc.services");
-            edtPassword.setText("1Itc2018!odooenimosa");
+            edtUsername.setText("");
+            edtPassword.setText("");
         }
         toggleSelfHostedURL();
         populateDatabases();
